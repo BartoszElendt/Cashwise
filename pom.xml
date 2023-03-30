@@ -8,11 +8,11 @@
         <version>2.7.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.github.szczepanskikrs</groupId>
-    <artifactId>budget-o-app</artifactId>
+    <groupId>com.company.cashwise</groupId>
+    <artifactId>cashwise</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>budget-o-app</name>
-    <description>budget-o-app</description>
+    <name>cashwise</name>
+    <description>cashwise</description>
     <properties>
         <java.version>17</java.version>
     </properties>
