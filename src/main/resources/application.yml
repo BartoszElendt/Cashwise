@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: PROD
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/budget
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: LOCAL
+management:
+  server:
+    port: 8082
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: PROD
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"
+springdoc:
+  api-docs:
+    enabled: false
