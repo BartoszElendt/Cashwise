@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 
 @Component
 class TripleBudgetValidationStrategy implements BudgetValidationStrategy {
+    private static final BigDecimal TRIPLE_BUDGET_MULTIPLIER = BigDecimal.valueOf(3);
+
     @Override
     public boolean supports(BudgetType budgetType) {
         return budgetType == BudgetType.CAPPED_TRIPLE;
@@ -17,6 +19,4 @@ class TripleBudgetValidationStrategy implements BudgetValidationStrategy {
         BigDecimal calculatedMax = max.multiply(TRIPLE_BUDGET_MULTIPLIER);
         return calculatedMax.compareTo(current.add(requested)) >= 0;
     }
-
-    private static final BigDecimal TRIPLE_BUDGET_MULTIPLIER = BigDecimal.valueOf(3);
 }

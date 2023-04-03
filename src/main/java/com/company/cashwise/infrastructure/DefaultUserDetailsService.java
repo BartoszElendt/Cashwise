@@ -5,14 +5,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-/**
- * User details service used by Spring Security to load information about users when someone calls our secured API
- */
 @Service
 class DefaultUserDetailsService implements UserDetailsService {
-    /**
-     * Repository we will inject MongoUserRepository on InMemoryUserRepository depending on active Profile
-     */
+
     private final UserRepository repository;
 
     public DefaultUserDetailsService(UserRepository repository) {

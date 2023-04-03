@@ -2,13 +2,6 @@ package com.company.cashwise.api.users;
 
 import com.company.cashwise.domain.users.BudgetAppUser;
 
-/**
- * Record that represents user registration response. Remember Records includes hashCode, equals, toString etc.
- *
- * @param username
- * @param email
- * @param userId
- */
 record UserDetailsResponse(
         String username,
         String email,

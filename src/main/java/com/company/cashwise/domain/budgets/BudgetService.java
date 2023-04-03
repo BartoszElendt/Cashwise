@@ -8,9 +8,6 @@ import org.springframework.data.domain.PageRequest;
 import java.math.BigDecimal;
 import java.util.Optional;
 
-/**
- * Interface used for operations on budgets
- */
 public interface BudgetService {
     Budget registerNewBudget(String name, UserId userId, BigDecimal cap, BudgetType budgetType);
 

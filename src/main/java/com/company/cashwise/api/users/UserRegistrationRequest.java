@@ -6,12 +6,6 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-/**
- * Record used to register new users
- * @param name
- * @param password
- * @param email
- */
 record UserRegistrationRequest(
         @NotNull
         @NotBlank

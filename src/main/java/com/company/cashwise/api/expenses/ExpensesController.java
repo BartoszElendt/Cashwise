@@ -29,6 +29,8 @@ import static com.company.cashwise.api.expenses.ExpensesController.EXPENSES_BASE
 @RestController
 @RequestMapping(EXPENSES_BASE_PATH)
 class ExpensesController {
+    static final Logger log = LoggerFactory.getLogger(ExpensesController.class);
+    static final String EXPENSES_BASE_PATH = "/expenses";
     private final ExpensesService expensesService;
 
     ExpensesController(ExpensesService expensesService) {
@@ -87,7 +89,4 @@ class ExpensesController {
         });
         return errors;
     }
-
-    static final Logger log = LoggerFactory.getLogger(ExpensesController.class);
-    static final String EXPENSES_BASE_PATH = "/expenses";
 }

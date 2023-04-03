@@ -11,28 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
-/**
- * Class that we use for registering users
- */
-// RestController annotation tells spring that it should use @Controller(pretty much alias for @Component) & @ResponseBody meta-information.
 @RestController
-// Exposes endpoint under /users for user registration
 @RequestMapping("/users")
-// Class doesn't need to be public it shouldn't leak out of `api` package.
 class UsersController {
-    // Service used for registration
     private final UserRegistrationService registrationService;
 
-    // Constructor
     UsersController(UserRegistrationService registrationService) {
         this.registrationService = registrationService;
     }
 
-    /**
-     * Endpoint used to register new users.
-     * @param request Body of request see {@link UserRegistrationRequest}
-     * @return response entity with user details (skipping password)
-     */
     @PostMapping
     @TimeMeasure
     ResponseEntity<UserDetailsResponse> registerUser(

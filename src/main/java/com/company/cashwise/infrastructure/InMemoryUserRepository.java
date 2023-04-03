@@ -11,11 +11,6 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Predicate;
 
-/**
- * In memory implementation of UserRepository
- * Used only when IN_MEMORY_SECURITY_SOURCE profile is active.
- * Stores and retrieves user information from hashmap
- */
 @Component
 @Profile({AppProfiles.IN_MEMORY_SECURITY_SOURCE, AppProfiles.LOCAL})
 class InMemoryUserRepository implements UserRepository {

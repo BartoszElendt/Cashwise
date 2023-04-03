@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 
 @Component
 class DoubleCappedBudgetValidationStrategy implements BudgetValidationStrategy {
+    private static final BigDecimal DOUBLE_BUDGET_MULTIPLIER = BigDecimal.valueOf(2);
+
     @Override
     public boolean supports(BudgetType budgetType) {
         return budgetType == BudgetType.CAPPED_DOUBLE;
@@ -17,6 +19,4 @@ class DoubleCappedBudgetValidationStrategy implements BudgetValidationStrategy {
         BigDecimal calculatedMax = max.multiply(DOUBLE_BUDGET_MULTIPLIER);
         return calculatedMax.compareTo(current.add(requested)) >= 0;
     }
-
-    private static final BigDecimal DOUBLE_BUDGET_MULTIPLIER = BigDecimal.valueOf(2);
 }
