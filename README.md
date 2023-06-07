@@ -36,7 +36,7 @@ Business Requirements
 - Alerts should be triggered if expenses exceed income.
 
 Installation and Setup
-1. Clone the repository: git clone https://github.com/BartoszElendt/repository.git
+1. Clone the repository: git clone https://github.com/BartoszElendt/Cashwise
 2. Install the required dependencies: npm install
 3. Configure the database connection in the config.js file.
 4. Run the application: npm start
