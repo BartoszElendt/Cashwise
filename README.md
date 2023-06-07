@@ -1,11 +1,13 @@
 Financial Planning and Budgeting Tool
-#
-This project aims to develop a comprehensive financial planning and budgeting application to help users manage their finances effectively. The application offers various features, including budgeting, expense tracking, expense reporting, income tracking, financial planning, and savings goal management.
 
+This project aims to develop a comprehensive financial planning and budgeting application to help users manage their finances effectively. The application offers various features, including budgeting, expense tracking, expense reporting, income tracking, financial planning, and savings goal management.
+#
 Key Features
+
 Budgeting
-Users can set budgets for different categories such as housing, food, transportation, and entertainment.
-The application tracks expenses and provides updates on how well users are adhering to their budgets.
+- Users can set budgets for different categories such as housing, food, transportation, and entertainment.
+- The application tracks expenses and provides updates on how well users are adhering to their budgets.
+
 Expense Tracking
 Users can add and classify their expenses, allowing the application to generate reports on spending patterns.
 Expenses can be categorized, labeled, and associated with information such as names, dates, and locations.
