@@ -1,5 +1,5 @@
 Financial Planning and Budgeting Tool
-
+#
 This project aims to develop a comprehensive financial planning and budgeting application to help users manage their finances effectively. The application offers various features, including budgeting, expense tracking, expense reporting, income tracking, financial planning, and savings goal management.
 
 Key Features
@@ -28,7 +28,7 @@ Expense reports should be generated, displaying expenses in the context of time,
 The application should store user income information in the database and take it into account when calculating budgets.
 Alerts should be triggered if expenses exceed income.
 Installation and Setup
-Clone the repository: git clone https://github.com/your_username/repository.git
+Clone the repository: git clone https://github.com/BartoszElendt/repository.git
 Install the required dependencies: npm install
 Configure the database connection in the config.js file.
 Run the application: npm start
